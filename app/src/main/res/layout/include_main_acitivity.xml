@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_show_infos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/app_bar_collapsing"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:rowCount="3"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <!-- R21 C1 -->
+            <LinearLayout
+                android:id="@+id/buttonShowList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewShowList"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_view_lisl_primary"/>
+
+                <TextView
+                    android:id="@+id/textViewShowList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/menu_list"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- R1 C2 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="0.1"
+            android:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- R1 C3 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="0.1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/buttonShowMap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewShowMap"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_place_primary"/>
+
+                <TextView
+                    android:id="@+id/textViewShowMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/menu_map"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- R2 C1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="0.1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- R2 C2 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="0.1"
+            android:layout_rowWeight="0.1">
+
+        </LinearLayout>
+
+        <!-- R2 C3 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="0.1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- R3 C1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <LinearLayout
+                android:id="@+id/buttonShowCategories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewShowCategories"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_map_primary"/>
+
+                <TextView
+                    android:id="@+id/textViewShowCategories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/menu_categories"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- R3 C2 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="0.1"
+            android:layout_rowWeight="1">
+
+            <LinearLayout
+                android:id="@+id/layoutSeparatorBottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorPrimary"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- R3 C3 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1">
+
+            <LinearLayout
+                android:id="@+id/buttonShowAchievements"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewAchievements"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_trophy_primary"/>
+
+                <TextView
+                    android:id="@+id/textViewShowAchievements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/menu_achievements"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </GridLayout>
+
+    <!-- Debug -->
+    <include layout="@layout/debug_scrollbar" />
+
+</android.support.design.widget.CoordinatorLayout>

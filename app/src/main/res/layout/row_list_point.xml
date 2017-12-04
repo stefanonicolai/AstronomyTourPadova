@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:descendantFocusability="blocksDescendants">
+
+        <LinearLayout
+            android:id ="@+id/linearLayoutPointRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+
+            android:onClick="showPoint">
+
+            <ImageView
+                android:id="@+id/imageViewPointImage"
+                android:transitionName="profile"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical|start"
+                android:src="@drawable/pd_astro_main"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewPointId"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="invisible"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPointName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPointTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@color/colorSilver"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageViewStar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginStart="5dp"
+                android:adjustViewBounds="false"
+                android:src="@drawable/ic_star_empty"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+</LinearLayout>

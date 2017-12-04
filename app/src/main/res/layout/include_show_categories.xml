@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_show_infos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="0dp"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/app_bar_collapsing"/>
+
+    <TextView
+        android:id="@+id/textViewCategoryFilterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fab_color"
+        android:textColor="@color/colorWhite"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollCategories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCategories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/howDoesItWorkRoutesTitleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/categories_how_does_it_work_title"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="26sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/howDoesItWorkRoutesTitleDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/categories_how_does_it_work_description"
+                android:layout_marginBottom="20dp"
+                android:textSize="16sp"/>
+
+            <GridLayout
+                android:id="@+id/gridLayoutCategories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:columnCount="2"
+                android:rowCount="2">
+
+                <!-- All -->
+                <LinearLayout
+                    android:id="@+id/categoriesAll"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_columnSpan="2"
+                    android:layout_columnWeight="2"
+                    android:layout_rowWeight="1"
+                    android:onClick="onClick">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imageViewCategoriesAll"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/header_categories_all"/>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradient_image">
+
+                            <TextView
+                                android:id="@+id/textViewCategoriesAllTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:paddingBottom="10dp"
+                                android:shadowColor="@color/colorPrimaryDark"
+                                android:shadowRadius="7.0"
+                                android:text="@string/categories_default_button"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="30sp"/>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!-- Chiese -->
+                <LinearLayout
+                    android:id="@+id/categories4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:onClick="onClick">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imageViewCategories4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/point_basilica_sant_antonio"/>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradient_image">
+
+                            <TextView
+                                android:id="@+id/textViewCategories4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:paddingBottom="10dp"
+                                android:shadowColor="@color/colorPrimaryDark"
+                                android:shadowRadius="7.0"
+                                android:text="@string/categories_default_button"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"/>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!-- Palazzi -->
+                <LinearLayout
+                    android:id="@+id/categories5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:onClick="onClick">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imageViewCategories5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/point_palazzo_della_ragione"/>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradient_image">
+
+                            <TextView
+                                android:id="@+id/textViewCategories5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:paddingBottom="10dp"
+                                android:shadowColor="@color/colorPrimaryDark"
+                                android:shadowRadius="7.0"
+                                android:text="@string/categories_default_button"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"/>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!-- Piazze -->
+                <LinearLayout
+                    android:id="@+id/categories6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:onClick="onClick">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imageViewCategories6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/point_prato_della_valle"/>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradient_image">
+
+                            <TextView
+                                android:id="@+id/textViewCategories6"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:paddingBottom="10dp"
+                                android:shadowColor="@color/colorPrimaryDark"
+                                android:shadowRadius="7.0"
+                                android:text="@string/categories_default_button"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"/>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!-- Astronomia -->
+                <LinearLayout
+                    android:id="@+id/categories7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:onClick="onClick">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imageViewCategories7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/point_la_specola"/>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradient_image">
+
+                            <TextView
+                                android:id="@+id/textViewCategories7"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:paddingBottom="10dp"
+                                android:shadowColor="@color/colorPrimaryDark"
+                                android:shadowRadius="7.0"
+                                android:text="@string/categories_default_button"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"/>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

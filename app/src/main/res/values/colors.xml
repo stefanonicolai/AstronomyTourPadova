@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2f5d87</color>
+    <color name="colorPrimaryOld1">#1524bf</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#1b7ea9</color>
+    <color name="comment_light_background">#d6d6d6</color>
+
+    <!-- Floating Action Button & CardView -->
+    <color name="fab_color">#FFAB00</color>
+    <color name="fab_facebook_color">#3B5998</color>
+    <color name="fab_cardView_question_text">#FFFFFF</color>
+    <color name="fab_cardView_buttons_text">#FFFFFF</color>
+
+    <!-- Trophies -->
+    <color name="colorReached">#FFAB00</color> <!-- Keep this one the same as fab_color -->
+    <color name="colorCompleted">#FFAB00</color>
+    <color name="colorCopper">#B87333</color>
+    <color name="colorSilver">#999999</color>
+    <color name="colorGold">#FFD700</color>
+    <color name="colorEmpty">#EDEDED</color>
+
+    <!-- Shared -->
+    <color name="colorOrange">#ff8c09</color>
+    <color name="colorTealDark">#00B482</color>
+    <color name="colorBlack">#555555</color>
+    <color name="colorRealBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey">#707070</color>
+    <color name="colorRed">#f25959</color>
+    <color name="colorGreen">#73e973</color>
+    <color name="colorGreyLight">#EDEDED</color>
+
+    <color name="bg_main">#428bca</color>
+
+</resources>

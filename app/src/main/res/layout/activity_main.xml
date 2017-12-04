@@ -1,0 +1,41 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/include_main_acitivity"/>
+
+    <include layout="@layout/include_navigation_view"/>
+
+    <FrameLayout
+        android:id="@+id/progressBarHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:animateLayoutChanges="true"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="70dp"
+            android:text="@string/loading_data"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+    </FrameLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

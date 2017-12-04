@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/image_transform</item>
+        <item name="android:windowSharedElementExitTransition">
+            @transition/image_transform</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="Button">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Floating Action Button -->
+    <style name="Widget.MaterialSheetFab.Fab" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/fab_spacing</item>
+        <item name="android:layout_marginBottom">@dimen/fab_spacing</item>
+        <item name="android:layout_marginLeft">@dimen/fab_spacing</item>
+        <item name="android:layout_marginRight">@dimen/fab_spacing</item>
+        <item name="android:elevation" tools:ignore="NewApi">@dimen/fab_elevation</item>
+        <item name="android:src">@drawable/ic_gps_fixed</item>
+        <item name="fabSize">normal</item>
+        <item name="borderWidth">0dp</item>
+        <item name="android:colorBackground">@color/fab_color</item>
+        <item name="android:backgroundTint">@color/fab_color</item>
+        <item name="android:color">@color/fab_color</item>
+    </style>
+
+    <!-- App Compact Style -->
+    <style name="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+</resources>

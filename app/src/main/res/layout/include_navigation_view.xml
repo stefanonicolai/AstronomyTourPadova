@@ -1,0 +1,14 @@
+<!-- Shared Navigation View -->
+<android.support.design.widget.NavigationView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="true"
+    app:headerLayout="@layout/nav_header"
+    app:itemBackground="@drawable/navigation_drawer_background"
+    app:itemIconTint="@color/menu_icons"
+    app:itemTextColor="@color/menu_icons"
+    app:menu="@menu/at_menu_left"/>

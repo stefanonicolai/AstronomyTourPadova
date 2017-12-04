@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_list_points"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="0dp"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/app_bar_collapsing" />
+
+    <TextView
+        android:id="@+id/textViewCategoryFilterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fab_color"
+        android:textColor="@color/colorWhite"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollViewListPoint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewPoints"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_empty"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/ic_view_lisl_empty"
+            android:title="@string/menu_list" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_place_empty"
+            android:title="@string/menu_map" />
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_map_empty"
+            android:title="@string/menu_categories" />
+        <item
+            android:id="@+id/nav_achievements"
+            android:icon="@drawable/ic_trophy_silver"
+            android:title="@string/menu_achievements" />
+    </group>
+
+
+    <item android:title="@string/menu_submenu_title">
+        <menu>
+            <item
+                android:id="@+id/nav_info_empty"
+                android:icon="@drawable/ic_info_empty"
+                android:title="@string/menu_info" />
+            <item
+                android:id="@+id/nav_info_credits"
+                android:icon="@drawable/ic_person_empty"
+                android:title="@string/menu_credits" />
+        </menu>
+    </item>
+
+</menu>

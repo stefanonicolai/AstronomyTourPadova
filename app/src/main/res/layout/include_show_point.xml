@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_show_point"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/app_bar_collapsing"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollViewShowPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutShowPoint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <!-- Name -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageViewPointStar"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="10dp"
+                            android:adjustViewBounds="false"
+                            android:src="@drawable/ic_star_empty"/>
+
+                        <TextView
+                            android:id="@+id/textPointName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="26sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <!-- Title -->
+                    <TextView
+                        android:id="@+id/textPointTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:textSize="20sp"/>
+
+                    <!-- Debug -->
+                    <LinearLayout
+                        android:id="@+id/linearLayoutShowPointDebug1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textPointUselessTile2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Le categorie:"
+                            android:textSize="14sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/textPointCategories"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                    <!-- Achievements -->
+                    <TextView
+                        android:id="@+id/textPointAchievements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/point_related_achievements"
+                        android:visibility="gone"
+                        android:textSize="16sp"/>
+
+
+                    <!-- Description -->
+                    <TextView
+                        android:id="@+id/textPointDescriptionTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="start"
+                        android:lineSpacingExtra="4sp"
+                        android:text="@string/point_description_title"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/textPointDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="start"
+                        android:lineSpacingExtra="4sp"
+                        android:textSize="16sp"/>
+
+                    <!-- Extras -->
+                    <LinearLayout
+                        android:id="@+id/linearLayoutExtras"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textPointExtrasTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="start"
+                            android:lineSpacingExtra="4sp"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:id="@+id/textPointExtras"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/colorGreyLight"
+                            android:gravity="start"
+                            android:lineSpacingExtra="4sp"
+                            android:padding="10dp"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <!-- Google Map -->
+                    <Button
+                        android:id="@+id/buttonGoToMap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:onClick="goToShowMap"
+                        android:text="@string/point_goto_map"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/textViewPointAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:textSize="14sp"/>
+
+                    <!-- Go to Parent Point -->
+                    <Button
+                        android:id="@+id/buttonGoToParent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:onClick="goToParent"
+                        android:textSize="14sp"
+                        android:visibility="gone"/>
+
+                    <!-- Debug -->
+                    <LinearLayout
+                        android:id="@+id/linearLayoutShowPointDebug2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/textPointStatusLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="4dp"
+                                android:text="Status: "
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:id="@+id/textPointStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="4dp"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:id="@+id/textPointTimeReached"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="4dp"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:id="@+id/textPointTimeCompleted"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="4dp"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <Button
+                                android:id="@+id/buttonSetStatusVoid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:onClick="setStatus"
+                                android:text="Setta Void"
+                                android:textSize="10sp"/>
+
+                            <Button
+                                android:id="@+id/buttonSetStatusReached"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:onClick="setStatus"
+                                android:text="Setta Reached"
+                                android:textSize="10sp"/>
+
+                            <Button
+                                android:id="@+id/buttonSetStatusCompleted"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:onClick="setStatus"
+                                android:text="Setta Completed"
+                                android:textSize="10sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textPointUselessTile6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:text="Punto padre:"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:id="@+id/textPointParent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <!-- Question & Answers section -->
+    <RelativeLayout
+        android:id="@+id/fabQuestionId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:visibility="gone"
+        app:layout_anchor="@id/scrollViewShowPoint"
+        app:layout_anchorGravity="bottom|right|end">
+
+        <!-- Your FAB implementation -->
+        <it.snicolai.pdastrotour.at.AtFab
+            android:id="@+id/question_Fab"
+            style="@style/Widget.MaterialSheetFab.Fab"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="60dp"
+            android:gravity="top|end"
+            app:useCompatPadding="true"/>
+
+        <!-- Overlay that dims the screen -->
+        <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
+            android:id="@+id/overlayQa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.gordonwong.materialsheetfab.DimOverlayFrameLayout>
+
+        <!-- Circular reveal container for the sheet -->
+        <io.codetail.widget.RevealLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:gravity="top|end"
+            android:orientation="vertical">
+
+            <!-- Sheet that contains your items -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:elevation="100dp"
+                app:cardBackgroundColor="@color/cardview_shadow_end_color"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/fab_color">
+
+                        <TextView
+                            android:id="@+id/questionText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="14dp"
+                            android:textColor="@color/fab_cardView_question_text"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textViewAnswer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="confirmAnswer"
+                        android:padding="15dp"
+                        android:tag="0"/>
+
+                    <TextView
+                        android:id="@+id/textViewAnswer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="confirmAnswer"
+                        android:padding="15dp"
+                        android:tag="1"/>
+
+                    <TextView
+                        android:id="@+id/textViewAnswer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="confirmAnswer"
+                        android:padding="15dp"
+                        android:tag="2"/>
+
+                    <TextView
+                        android:id="@+id/textViewAnswer4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="confirmAnswer"
+                        android:padding="15dp"
+                        android:tag="3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/fab_color"
+                            android:minHeight="30dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+        </io.codetail.widget.RevealLinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Reach the new point! -->
+    <RelativeLayout
+        android:id="@+id/fabReachPointId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:visibility="gone"
+        app:layout_anchor="@id/scrollViewShowPoint"
+        app:layout_anchorGravity="bottom|right|end">
+
+        <!-- Your FAB implementation -->
+        <it.snicolai.pdastrotour.at.AtFab
+            android:id="@+id/fabReachPoint"
+            style="@style/Widget.MaterialSheetFab.Fab"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="60dp"
+            android:gravity="top|end"
+            app:useCompatPadding="true"/>
+
+        <!-- Overlay that dims the screen -->
+        <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
+            android:id="@+id/overlayReachPoint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.gordonwong.materialsheetfab.DimOverlayFrameLayout>
+
+        <!-- Circular reveal container for the sheet -->
+        <io.codetail.widget.RevealLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:gravity="top|end"
+            android:orientation="vertical">
+
+            <!-- Sheet that contains your items -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardViewReachPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:elevation="100dp"
+                app:cardBackgroundColor="@color/cardview_shadow_end_color"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/fab_color">
+
+                        <TextView
+                            android:id="@+id/textViewReachPointTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="14dp"
+                            android:textColor="@color/fab_cardView_question_text"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textViewIntroduction"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:lineSpacingExtra="4sp"
+                        android:padding="15dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/textViewDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:lineSpacingExtra="4sp"
+                        android:padding="15dp"
+                        android:textSize="16sp"
+                        android:textStyle="italic"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/fab_color"
+                            android:minHeight="30dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+        </io.codetail.widget.RevealLinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

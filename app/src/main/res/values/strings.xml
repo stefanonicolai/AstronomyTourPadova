@@ -1,0 +1,137 @@
+<resources>
+    <!-- Shared -->
+    <string name="app_name">Astro Tour Padova</string>
+    <string name="notification_desc">Se passi vicino ad uno dei punti di interesse ti avviso io!</string>
+    <string name="notification_title_reached">Hai raggiunto un nuovo punto!</string>
+    <string name="notification_desc_reached">Hai appena raggiunto \"%1$s\". Scopri quali sfide ti attendono!</string>
+    <string name="network_error">Sembra ci siano problemi di connessione ad internet. Per favore controlla e riprova!</string>
+    <string name="network_error_snack">Serve una connessione ad internet per poter scaricare i dati al primo avvio.\nAssicurati di essere collegato e ritenta!</string>
+    <string name="network_error_snack_button">Ritenta</string>
+    <string name="loading_data">Download dei dati in corso</string>
+
+    <!-- Menu -->
+    <string name="menu_home">Home</string>
+    <string name="menu_list">Lista Punti</string>
+    <string name="menu_map">Mappa</string>
+    <string name="menu_categories">Percorsi</string>
+    <string name="menu_achievements">Trofei</string>
+    <string name="menu_submenu_title">Altre sezioni</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_credits">Credits</string>
+
+    <!-- Messages -->
+    <string name="google_location_service_ok">I servizi di Google sono attivi, sei pronto per giocare!</string>
+    <string name="google_location_service_ko">Per giocare devi abilitare i servizi di Google Play Service!</string>
+    <string name="location_settings_problem">I settaggi della Location sono inadeguati, e non possono essere sistemati qui. Aggiustali nelle opzioni.</string>
+    <string name="location_permission_request">I permessi di localizzazioni sono necessari per giocare l\'app. Per favore, abilitali!</string>
+
+    <!-- PointS -->
+    <string name="point_unreached_name">Punto nascosto</string>
+    <string name="point_unreached_address"> </string>
+    <string name="point_unreached_title">Devi prima raggiungere: </string>
+    <string name="point_unreached_description">Per visualizzare questa sezione devi prima superare una sfida. Trova gli indizi raggiungendo il punto:</string>
+    <string name="point_extras_title">Curiosità:</string>
+    <string name="point_extras_qa_title">La domanda cui hai risposto:</string>
+    <string name="point_event_completed_void">Complimenti, hai completato questo punto!</string>
+    <string name="point_event_completed_extras">Complimenti, hai sbloccato le informazioni nascoste per questo punto!</string>
+    <string name="point_event_completed_qa">Complimenti, hai risposto correttamente alla domanda. Punto completato!</string>
+    <string name="point_event_completed_reach">Complimenti, hai raggiunto il punto segreto!</string>
+
+    <!-- SnackBar -->
+    <string name="snackbar_text">"Hai raggiunto il punto:\n&quot;%1$s&quot;</string>
+
+    <!-- Main -->
+    <string name="main_see_list">Lista dei punti</string>
+    <string name="main_see_map">I punti sulla mappa</string>
+    <string name="main_see_achivments">I miei trofei</string>
+    <string name="main_see_routes">I percorsi</string>
+    <string name="main_see_credits">Credits</string>
+
+    <!-- Infos -->
+    <string name="infos_title">Esplora la città di Padova</string>
+    <string name="infos_subtitle">Raggiungi i punti, affronta le diverse sfide che nascondono e conquista tutti i trofei!</string>
+    <string name="infos_body1">Ogni luogo da visitare può essere associato ad un evento.<br/>
+        Ci sono tre tipi di eventi che vengono lanciati, ma solo uno per ciascun luogo: \"Extra\", \"Domanda\" oppure \"Raggiungi il punto nascosto\".</string>
+    <string name="infos_body2">Per sbloccare l\'evento devi prima raggiungere fisicamente il luogo indicato o almeno recarti nelle vicinanze.</string>
+    <string name="infos_body3"><![CDATA[ <ul>
+&#8226; <b>Extra:</b> puoi sbloccare ulteriori informazioni che verranno visualizzate in aggiunta alla descrizione già in tuo possesso.<br/>
+&#8226; <b>Domanda:</b> ti viene posta una domanda con quattro risposte possibili. Soltanto una è quella corretta. Sarai in grado di individuarla?<br/>
+&#8226; <b>Raggiungi il luogo nascosto:</b> ti viene proposto un indovinello da risolvere per poter trovare un luogo nei dintorni di quello appena raggiunto. Risolvi l’enigma, recati fisicamente dove richiesto e completerai la sfida! ]]></string>
+
+    <string name="infos_body4">Stelle</string>
+    <string name="infos_body5">Le stelle indicano il raggiungimento del punto</string>
+    <string name="infos_body6"><b>Vuota</b> significa che non lo hai raggiunto</string>
+    <string name="infos_body7"><b>Metà</b> significa che hai raggiunto il punto, ma non hai completato l\'evento</string>
+    <string name="infos_body8"><b>Piena</b> significa che hai completato l\'evento associato al punto</string>
+
+    <string name="infos_body9">Hai 4 sezioni principali</string>
+    <string name="infos_body10"><b>Lista</b> di tutti i punti, sempre consultabile anche senza connessione a internet. Nel caso sia stato attivato un percorso questa lista sarà filtrata mostrando solo i punti appartenenti al percorso scelto. Una barra apposita segnalerà la presenza del filtro.</string>
+    <string name="infos_body11"><b>Mappa</b> per individuare i luoghi e poter accedere a Google Maps in modo da riuscire a raggiungerli. Avvicinandoti ai punti previsti,  sulla mappa si evidenzieranno delle icone:</string>
+    <string name="infos_body111">icona grigia indica i punti non raggiunti</string>
+    <string name="infos_body112">icona verde segnala quelli raggiunti o completati</string>
+    <string name="infos_body113">icona gialla nel caso si provenga da uno dei punti dopo aver cliccato l\'apposito bottone</string>
+    <string name="infos_body114">Cliccando sopra qualsiasi icona compariranno il nome ed il titolo relativi al luogo corrispondente in una infobox; se la clicchi puoi entrare nella scheda informativa.</string>
+    <string name="infos_body115">Se invece clicchi sull\'icona di Google Maps che appare nell\'angolo in basso a destra dello schermo, potrai aprire l\'applicazione Mappe ed ottenere una guida per raggiungere il punto desiderato.</string>
+    <string name="infos_body12"><b>Percorsi</b> ti permette di giocare in una sotto-sezione per raggiungere luoghi selezionati per categorie. Nel caso tu non abbia abbastanza tempo per girare tutta Padova, puoi scegliere quale percorso preferisci e affrontare le sfide.<br/>Una volta impostato un percorso lo si può anche cambiare, ma solo tornando alla sezione percorsi iniziale e selezionando \"tutti i percorsi\" saranno nuovamente visibili tutti i luoghi persenti nell\'app</string>
+    <string name="infos_body13"><b>Trofei</b> ti mostra i progressi che hai fatto nel gioco. Sblocca le coppe di bronzo e d\'argento fino ad arrivare a quella d\'oro per ciascun gruppo!</string>
+
+    <string name="infos_body14">Menu laterale</string>
+    <string name="infos_body15">In ogni momento puoi fare swipe dal bordo sinistro del dispositivo verso il centro dello stesso per visualizzare il menu principale dell\'applicazione, in modo da poter accedere agilmente a qualsiasi sezione tu voglia.</string>
+
+    <!-- Credits -->
+    <string name="credits_body1"><![CDATA[ App realizzata per concorrere alla challenge <b>"Space App Contest"</b> indetta da <a href="http://www.unismart.it">Unismart</a> e <a href="http://www.pd-promex.it/it">Padova Promex</a> in occasione della Padova Space Week (4&#8211;7 Dicembre 2017)]]></string>
+    <string name="credits_body2">Componenti del team</string>
+    <string name="credits_body3">Analisi, progettazione e brainstorming</string>
+    <string name="credits_body4">Catalin Copil, Stefano Nicolai</string>
+    <string name="credits_body5">Sviluppo</string>
+    <string name="credits_body6">Stefano Nicolai</string>
+    <string name="credits_body7">Testing</string>
+    <string name="credits_body8">Catalin Copil, Stefano Nicolai</string>
+
+    <string name="credits_texts_0">Itinerario principale</string>string>
+    <string name="credits_texts_1">Questo itinerario è una sintesi della guida “Seconda stella a destra” di Bas Bleu Illustration.</string>string>
+    <string name="credits_texts_2"><![CDATA[ La guida è reperibile online <a href="http://www.basbleuillustration.com">www.basbleuillustration.com</a> o nelle librerie della città di Padova. Per maggiori informazioni: info@basbleu.it ]]></string>>
+    <string name="credits_texts_3">Testi</string>
+    <string name="credits_texts_4">L. Benacchio, C. Di Benedetto, V. Cappelli</string>
+    <string name="credits_texts_5">Gamification ed Immagini</string>
+    <string name="credits_texts_6">Testi per domande e risposte, curiosità ed indicazioni per raggiungere i punti. Fotografie di palazzi, piazze e chiese di Padova</string>
+    <string name="credits_texts_7">Stefano Nicolai, Wikipedia</string>
+
+    <!-- Show Map -->
+    <string name="shop_map_location_sensor">Per favore, abilita la localizzazione per poter proseguire!</string>
+
+    <!-- List Points -->
+    <string name="list_points_title">Tutti i punti d\'interesse</string>
+    <string name="list_filter_category">Stai filtrando per il percorso: </string>
+
+    <!-- List Achievements -->
+    <string name="list_achievements_title">Colleziona tutti i trofei</string>
+
+    <!-- Show Point -->
+    <string name="point_goto_map">Vedi questo punto nella mappa</string>
+    <string name="point_goto_parent">Vai al punto: </string>
+    <string name="point_reach_point_title">Se vuoi sbloccare l\'informazione oscurata&#8230; risolvi l\'indovinello e raggiungi il luogo indicato!</string>
+    <string name="point_description_title">Descrizione</string>
+    <string name="point_related_achievements"><![CDATA[<b>Vale per i trofei:</b>%1$s]]></string>
+
+    <!-- SnackbarS -->
+    <string name="snackbar_goto_point">Affronta la sfida!</string>
+
+    <!-- Social -->
+    <string name="social_share_title">Condividi i tuoi risultati con i tuoi amici!</string>
+    <string name="social_share_description">Sezione condividi nei social non ancora implementata!</string>
+
+    <!-- Percorsi -->
+    <string name="categories_title">Scegli il percorso che preferisci!</string>
+    <string name="categories_description">La mappa di Padova, personalizzata.</string>
+    <string name="categories_default_button">Abilita tutti i punti</string>
+    <string name="categories_how_does_it_work_title">Come funziona</string>
+    <!--<string name="categories_how_does_it_work_description">Scegli il percorso desiderato, e filtra i punti in base alla tua scelta! Puoi sempre cambiare idea più tardi.</string>-->
+    <string name="categories_how_does_it_work_description"><![CDATA[Nel caso tu non abbia abbastanza tempo per visitare tutte le parti di interesse di Padova, puoi limitare la tua esperienza ai punti con la tematica che più ti affascina cliccando sull\'immagine di uno dei percorsi sottostanti.<br/>
+L\'applicazione filtrerà i punti normalmente disponibili con quelli appartenenti al percorso da te scelto.<br/><br/>
+<b>ATTENZIONE!</b> L\'applicazione non considererà i punti non presenti all\'interno del percorso, anche nel caso tu ci passassi vicino.<br/><br/>
+Per poter godere appieno dell\'esperienza che la città di Padova ti mette a disposizione puoi sempre tornare in questa schermata e selezionare un percorso differente, oppure scegliere <b>\"Abilita tutti i punti\"</b>.<br/>
+Alla fine, puoi sempre scegliere di creare il tuo percorso raggiungendo soltanto i luoghi che più ti incuriosiscono!]]></string>
+    <string name="categories_total_points">Punti nel percorso:</string>
+
+</resources>

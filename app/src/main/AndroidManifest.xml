@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="it.snicolai.pdastrotour">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/space_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Main -->
+        <activity
+            android:name="it.snicolai.pdastrotour.MainActivity"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Content Provider -->
+        <provider
+            android:name=".data.LocalContentProvider"
+            android:authorities="it.snicolai.pdastrotour.provider"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <!-- Activities -->
+        <activity
+            android:name=".game.ListPointsActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".game.ListAchievementsActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".game.ShowMapActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".game.ShowCategoriesActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".game.ShowPointActivity"
+            android:parentActivityName=".game.ListPointsActivity"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".game.ListPointsActivity"/>
+        </activity>
+
+        <activity
+            android:name=".game.ShowInfosActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".game.ShowCreditsActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+        <!-- Service: it auto-stops itself on app close -->
+        <service
+            android:name=".utils.LocationService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="true"/>
+
+        <!-- Useful Data -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+    </application>
+
+</manifest>
